@@ -1,4 +1,7 @@
-function get_name() {
-  let text = document.form1.name.value;
-  alert(text);
+function changeImg() {
+  $("#image").attr("src", "images/image-3.png");
+}
+
+function changeSize() {
+  $("#image").css("width", "50px");
 }
