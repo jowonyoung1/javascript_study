@@ -1,7 +1,7 @@
-function changeImg() {
-  $("#image").attr("src", "images/image-3.png");
-}
+const elem = document.createElement("p");
+const text = document.createTextNode("변경한 단락");
 
-function changeSize() {
-  $("#image").css("width", "50px");
-}
+elem.appendChild(text);
+
+const p1 = document.getElementById("p1");
+document.getElementById("box").replaceChild(elem, p1);
